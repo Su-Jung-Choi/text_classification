@@ -2,10 +2,8 @@
 //********************************************************************
 // CSC790: Information Retrieval and Web Search
 // Project Title: Research Paper Classification
-// by Team 1 (Sujung Choi, Jeniya Sultana)
-// May 2, 2024
-//
-// Description: this file is to save numpy arrays for X(tf-idf) and y(labels) to a file for future use.
+// by Sujung Choi, Jeniya Sultana
+// Description: This file is to save numpy arrays for X(tf-idf) and y(labels) to a file for future use.
 //
 //********************************************************************
 """

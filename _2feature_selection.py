@@ -2,9 +2,7 @@
 //********************************************************************
 // CSC790: Information Retrieval and Web Search
 // Project Title: Research Paper Classification
-// by Team 1 (Sujung Choi, Jeniya Sultana)
-// May 2, 2024
-//
+// by Sujung Choi, Jeniya Sultana
 // Description: This file is used to perform feature selection using mutual information, chi-square, and f_classif (ANOVA F-Value) methods.
 //
 //********************************************************************

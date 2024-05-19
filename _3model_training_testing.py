@@ -2,9 +2,7 @@
 //********************************************************************
 // CSC790: Information Retrieval and Web Search
 // Project Title: Research Paper Classification
-// by Team 1 (Sujung Choi, Jeniya Sultana)
-// May 2, 2024
-//
+// by Sujung Choi, Jeniya Sultana
 // Description: This file is used to train the neural network model using the k selected features and evaluates the model on the test set.
 // It also includes training the model using the entire features to compare the performance.
 // It generates plots for the progress of the training and validation loss, accuracy, and F1 score for both models.

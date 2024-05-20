@@ -114,10 +114,6 @@ def feature_selection(X, y, num_classes):
         nn_mi = NN_model(k, num_classes, learning_rate)
         nn_mi.fit(X_train_mi_selected, y_train_mi_onehot, batch_size=batch_size, epochs=epochs, verbose=1)
 
-        # save
-        #with open('nn_mi.pkl', 'wb') as f_mi:
-            #pickle.dump(nn_mi, f_mi)
-
         mi_results = nn_mi.evaluate(X_test_mi_selected, y_test_mi_onehot, verbose=1)
         print("Mutual Information results:", mi_results)
         accuracy_mi = mi_results[1]
@@ -139,10 +135,6 @@ def feature_selection(X, y, num_classes):
         nn_chi2 = NN_model(k, num_classes, learning_rate)
         nn_chi2.fit(X_train_chi2, y_train_chi2_onehot, batch_size=batch_size, epochs=epochs, verbose=1)
 
-        # save
-        #with open('nn_chi2.pkl', 'wb') as f_chi2:
-            #pickle.dump(nn_chi2, f_chi2)
-
         chi2_results = nn_chi2.evaluate(X_test_chi2, y_test_chi2_onehot, verbose=1)
         accuracy_chi2 = chi2_results[1]
 
@@ -163,14 +155,11 @@ def feature_selection(X, y, num_classes):
         nn_f = NN_model(k, num_classes, learning_rate)
         nn_f.fit(X_train_f, y_train_f_onehot, batch_size=batch_size, epochs=epochs, verbose=1)
 
-        # save
-        #with open('nn_f.pkl', 'wb') as f_f_classif:
-            #pickle.dump(nn_f, f_f_classif)
-
         f_results = nn_f.evaluate(X_test_f, y_test_f_onehot, verbose=1)
         accuracy_f = f_results[1]
 
-        #-------------------------------------------------------------------
+        #-----------------------------anova f value end--------------------------------------
+        
         # Store results in the dictionaries
         num_features_selected['mutual_info'].append(k)
         accuracy_scores['mutual_info'].append(accuracy_mi)
